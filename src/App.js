@@ -46,7 +46,9 @@ function App() {
         </label>
         <button>Create Task</button>
       </form>
-      <TaskCard />
+      {tasks.map(task => (
+        <TaskCard task={task} key={task.index}/>
+      ))}
     </div>
   );
 }

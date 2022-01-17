@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
 
-const TaskCard = () => {
-    const [task, setTask] = useState("")
+const TaskCard = (props) => {
+
+    const {task} = props
+
+    console.log(task)
+
+    const [currentTask, setCurrentTask] = useState("")
 
     const handleEdit = () => {
 
@@ -13,8 +18,8 @@ const TaskCard = () => {
 
     return(
         <div>
-            <h3>Title</h3>
-            <p>{task}</p>
+            <h3>{task.title}</h3>
+            <p>{task.steps}</p>
             <button onClick={handleDelete}>X</button>
             <button onClick={handleEdit}>Edit</button>
         </div>
