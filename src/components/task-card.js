@@ -4,8 +4,6 @@ const TaskCard = (props) => {
 
     const {task} = props
 
-    console.log(task)
-
     const [currentTask, setCurrentTask] = useState("")
 
     const handleEdit = () => {
