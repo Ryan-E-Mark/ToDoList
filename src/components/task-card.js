@@ -4,7 +4,7 @@ const TaskCard = () => {
     const [task, setTask] = useState("")
 
     const handleEdit = () => {
-        
+
     }
 
     const handleDelete = () => {
@@ -13,6 +13,7 @@ const TaskCard = () => {
 
     return(
         <div>
+            <h3>Title</h3>
             <p>{task}</p>
             <button onClick={handleDelete}>X</button>
             <button onClick={handleEdit}>Edit</button>
